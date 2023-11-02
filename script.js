@@ -39,11 +39,11 @@ menuIcon.onclick = () =>{
 
 /*link*/
 
-let section=document.querySelectorAll('#menu-icon');
+let section=document.querySelectorAll('active');
 let navLinks=document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-    sections.forEach(sec =>{
+    sections.forEach(sec => {
         let top=window.scrollY;
         let offset=sec.offsetTop - 150;
         let height=sec.offsetHeight;
@@ -75,13 +75,11 @@ ScrollReveal().reveal('.home-img , .services-container,.project-box,.contact for
 ScrollReveal().reveal('.home-content h1 , .about-img',{origin:'left'});
 ScrollReveal().reveal('.home-content p , .about-content',{origin:'right'});
 
-const typed=new Typed('.multiple-text',{
-    strings:['Software Developer','Web Designer','DBA Administrator'],
+const typed=new Typed('.multiple-text2',{
+    strings:['Software Developer','Web Designer','DB Administrator'],
     typeSpeed:100 ,
     backSpeed:100,
     backDelay:1000,
     loop:true
 });
-
-//popup
 
