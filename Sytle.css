@@ -273,7 +273,7 @@ transition: .5s ease;
     transform: translateY(0);
 }
 .project-layer h4{
-font-size: 3rem;
+font-size: 2.5rem;
 color: black;
 }
 .project-layer p{
@@ -312,7 +312,7 @@ color: black;
 }
 .contact form .input-box input,
 .contact form textarea{
-    width: 120%;
+    width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
@@ -324,8 +324,7 @@ color: black;
     width: 100%;
 }
 .contact form textarea{
-    width: 100%;
-    resize: none;
+    width: 120%;
 }
 
 .contact form .btn{
