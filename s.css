@@ -95,6 +95,9 @@ h2 {
   .grid-template img{
     height: 23rem;
   }
+  .home a{
+    align-items: center;
+  }
 }
 
 
@@ -211,8 +214,18 @@ h2 {
     font-weight: 600;
     cursor: pointer;
     transition: .5s ease;
+  align-items: center;
 }
 
 .btn:hover{
     box-shadow: none;
 }
+.home{
+    display: flex;
+    justify-content: center;
+}
+.home a{
+ display: flex;
+ justify-content: center;
+}
+
