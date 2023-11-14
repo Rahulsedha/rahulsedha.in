@@ -26,22 +26,7 @@ header{
   display: flex;
   align-items: center;
 }
-.btn {
-  background-color: var(--main-color);
-  box-shadow: 0 0 2rem var(--main-color);
-  height: 30px;
-  width: 75px;
-  padding-top: 8px;
-  margin: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 20px;
-  font-size: 14px;
-  letter-spacing: .1rem;
-  color: var(--second-bg-color);
-  font-weight: 600;
-  cursor: pointer;
-}
+
 
 .grid-distribution {
   display: grid;
@@ -215,6 +200,7 @@ h2 {
     cursor: pointer;
     transition: .5s ease;
   align-items: center;
+  text-decoration: none;
 }
 
 .btn:hover{
@@ -227,5 +213,6 @@ h2 {
 .home a{
  display: flex;
  justify-content: center;
+ line-height: normal;
 }
 
