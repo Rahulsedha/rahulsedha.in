@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+  --check-color: #967bb6;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+span {
+  color: var(--main-color);
+}
+header{
+  display: flex;
+  align-items: center;
+}
+
+
+.grid-distribution {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 10px;
+}
+
+.grid-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+h2 {
+  margin: 10px;
+  text-align: center;
+}
+
+.grid-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-template img {
+  height: 35rem;
+}
+
+
+
+
+@media only screen and (max-width:750px) {
+  .grid-distribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-text{
+    width: 100%;
+  }
+  .grid-template img{
+    height: 30rem;
+  }
+  .wrapper{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width:550px){
+  .grid-template img{
+    height: 23rem;
+  }
+  .home a{
+    align-items: center;
+  }
+}
+
+
+/* skills wrapper CSS */
+
+.wrapper{
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 4%;
+  justify-content: space-between;
+}
+.wrapper .card{
+  background:transparent;
+  /* width: calc(25% - 8px); */
+  width: 240px;
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper .card .circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+}
+.card .circle .box,
+.card .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.card .circle .box{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.card .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span,
+.wrapper .card .text{
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circle .box span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .box span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text{
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text{
+    font-size: 1rem;
+}
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+.test{
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-family:'Times New Roman', Times, serif
+}
+.btn{
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+    justify-content: space-between;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 2rem var(--main-color);
+    font-size: 1rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s ease;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+.home{
+    display: flex;
+    justify-content: center;
+}
+.home a{
+ display: flex;
+ justify-content: center;
+ line-height: normal;
+}
+
